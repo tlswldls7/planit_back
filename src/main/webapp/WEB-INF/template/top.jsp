@@ -11,7 +11,7 @@
         <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
       </div>
       <!--logo start-->
-      <a href="index.html" class="logo"><b>PLAN<span>IT</span></b></a>
+      <a href="<c:url value='/'/> " class="logo"><b>PLAN<span>IT</span></b></a>
       <!--logo end-->
       <div class="nav notify-row" id="top_menu">
         <!--  notification start -->
@@ -109,7 +109,7 @@
       <div class="top-menu">
         <ul class="nav pull-right top-menu">
         <c:if test="${not empty sessionScope.id }" var="isLogin">
-         	 <li><a class="logout" href="<c:url value='/Planit/admin/logout.do'/> ">Logout</a></li>
+         	 <li><a class="logout" href="<c:url value='/Planit/admin/logout.do'/> " >Logout</a></li>
           </c:if>
         </ul>
       </div>
@@ -124,7 +124,7 @@
         <!-- sidebar menu start-->
         <ul class="sidebar-menu" id="nav-accordion">
           <p class="centered"><a href="<c:url value='/Planit/admin/Profile.do'/>"><img src="<c:url value='/theme/img/planit_logo.png'/> " class="img-circle" width="80"></a></p>
-          <h5 class="centered">정현선</h5>
+          <h5 class="centered">${sessionScope.admin.name}</h5>
           <li class="mt">
             <a class="active" href="<c:url value='/Planit/admin/Dashboard.do'/>">
               <i class="fa fa-dashboard"></i>
@@ -166,6 +166,15 @@
               <li><a href="<c:url value='/Planit/Admin/Event/List.do'/> ">이벤트관리</a></li>
               <li><a href="<c:url value='/Planit/Admin/partner/List.do'/> ">숙박예약관리</a></li>
               
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-book"></i>
+              <span>컨텐츠관리</span>
+              </a>
+            <ul class="sub">
+              <li><a href="<c:url value='/Planit/Admin/Content/List.do'/> ">관광정보</a></li>
             </ul>
           </li>
           <li class="sub-menu">

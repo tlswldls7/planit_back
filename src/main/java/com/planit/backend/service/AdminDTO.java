@@ -4,7 +4,8 @@ import java.sql.Date;
 
 public class AdminDTO {
 	private String emp_no;
-	private String id;
+	private String e_id;
+	
 	private String pwd;
 	private String name;
 	private String tel;
@@ -19,11 +20,13 @@ public class AdminDTO {
 	public void setEmp_no(String emp_no) {
 		this.emp_no = emp_no;
 	}
-	public String getId() {
-		return id;
+	
+	
+	public String getE_id() {
+		return e_id;
 	}
-	public void setId(String id) {
-		this.id = id;
+	public void setE_id(String e_id) {
+		this.e_id = e_id;
 	}
 	public String getPwd() {
 		return pwd;

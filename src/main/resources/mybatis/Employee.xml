@@ -12,10 +12,10 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 <mapper namespace="mybatis.Employee">
 
 	<select id="adminIsMember" parameterType="java.util.Map" resultType="int">
-		SELECT COUNT(*) FROM emp WHERE id=#{id} AND pwd=#{pwd}
+		SELECT COUNT(*) FROM emp WHERE e_id=#{e_id} AND pwd=#{pwd}
 	</select>
 	
 	<select id="adminSelectOne" parameterType="java.util.Map" resultType="adminDTO">
-		SELECT * FROM emp WHERE id=#{id}
+		SELECT * FROM emp WHERE e_id=#{e_id}
 	</select>
 </mapper>

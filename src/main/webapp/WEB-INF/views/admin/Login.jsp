@@ -97,15 +97,16 @@
 			<form role="form" action="<c:url value='/planit/admin/loginprocess.do'/>" method="post">
 				<div class="form-group">
 					<label class="sr-only login-text" for="r-form-1-first-name">ID</label>
-					<input type="text" name="id" style="height: 50px;"
+					<input type="text" name="e_id" style="height: 50px;"
 						placeholder="admin" class="r-form-1-first-name form-control" id="r-form-1-first-name">
 				</div>
 				
 				<div class="form-group">
-					<label class="sr-only login-text" for="r-form-1-last-name">PWD</label> <input
-						type="text" name="pwd" placeholder="password" style="height: 50px;"
+					<label class="sr-only login-text" for="r-form-1-last-name">PWD</label> 
+					<input type="text" name="pwd" placeholder="password" style="height: 50px;"
 						class="r-form-1-last-name form-control" id="r-form-1-last-name">
 				</div>
+				
 				<c:if test="${not empty loginError}"><div style="color:red; font-weight:bold">${loginError}</div></c:if>
 				<button type="submit" class="login-btn">Sign me up!</button>
 			</form>
