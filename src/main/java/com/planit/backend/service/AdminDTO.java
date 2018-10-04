@@ -12,6 +12,7 @@ public class AdminDTO {
 	private String dept_no;
 	private String position;
 	private Date hiredate;
+	
 	public String getEmp_no() {
 		return emp_no;
 	}

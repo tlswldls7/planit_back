@@ -18,7 +18,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 
 	<!-- mapper file location -->
 	<mappers>
-		<mapper resource="mybatis/Planit.xml" />
+		<mapper resource="mybatis/Employee.xml" />
 	</mappers>
 	
 </configuration>
